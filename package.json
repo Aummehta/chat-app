@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass public/styles.scss public/styles.css && browserify index.js -o bundle.js && imagemin assets/* -o public/assets"
   },
   "keywords": [],
   "author": "",
